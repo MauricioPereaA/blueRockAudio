@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% comment %} Required meta tags {% endcomment %}
+    <meta charset="UTF-8">
+    {% block head_content %}{% endblock %}
+
+    {% comment %} bootstrap CSS {% endcomment %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <script src="{% static 'js/index.js' %}"></script>
+
+</head>
+<body>
+
+    {% include "nav.html" %}
+
+    <div class="container mt-5">
+        {% block container %}
+        {% endblock%}
+    </div>
+
+</body>
+</html>
