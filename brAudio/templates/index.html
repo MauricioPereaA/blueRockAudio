@@ -3,22 +3,35 @@
 <head>
     {% comment %} Required meta tags {% endcomment %}
     <meta charset="UTF-8">
-    {% block head_content %}{% endblock %}
+    {% comment %} {% block head_content %}{% endblock %} {% endcomment %}
 
     {% comment %} bootstrap CSS {% endcomment %}
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <script src="{% static 'js/index.js' %}"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Bungee+Inline|Sirin+Stencil&display=swap"
+      rel="stylesheet">
+
+    <title>BlueRockAudio</title>
 </head>
 <body>
 
     {% include "nav.html" %}
 
     <div class="container mt-5">
+    <div class="card" style="width: 18rem;">
+         <img class="card-img-top" src="..." alt="Card image cap">
+         <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+        <h1>Hello Marc</h1>
         {% block container %}
         {% endblock%}
-    </div>
 
+    </div>
 </body>
 </html>

@@ -1,1 +1,8 @@
 @import "bootstrap/scss/bootstrap";
+
+// core variables and mixings
+@import "base/mixins";
+@import "base/variables";
+
+//Components
+@import "components/navbar";
